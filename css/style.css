@@ -21,14 +21,41 @@ body{
     border-radius: 15px;
     width: 25%;
 }
+.contenido .estado{
+    position: relative;
+}
+.contenido .estado .fondoEstado{
+    display: none;
+    width: 100%;
+    height: 98%;
+    background-color: #00fff7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    border-radius: 15px;
+}
+.contenido .estado .fondoEstado img{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
 .contenido .cubo{
     width: 100%;
     border-radius: 15px;
+    cursor: pointer;
 }
 .contenido .titulo{
     color: #fff;
     font-size: 1.1rem;
     margin: 8px 0;
+}
+.contenido .titulo:hover, .contenido .perfil p:hover{
+    color: #00fff7;
+    cursor: pointer;
 }
 .contenido .parrafo, .contenido .creacion{
     color: #8BACD9;

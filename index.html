@@ -11,7 +11,10 @@
 </head>
 <body>
   <main class="contenido">
-    <img class="cubo" src="images/image-equilibrium.jpg" alt="cubo" srcset="">
+    <div class="estado">
+      <div class="fondoEstado"><img src="images/icon-view.svg" alt="" srcset=""></div>
+      <img class="cubo" src="images/image-equilibrium.jpg" alt="cubo" srcset="">
+    </div>
     <h1 class="titulo"><strong>Equilibrium #3429</strong></h1>
 
     <p class="parrafo">Our Equilibrium collection promotes balance and calm.</p>
@@ -37,5 +40,16 @@
       Coded by <a href="#">Luchoc97</a>.
     </div>
   </main>
+  <script>
+    let img = document.querySelector(".cubo");
+    let fondo = document.querySelector(".fondoEstado")
+    
+    img.addEventListener("mouseover", () => { 
+        fondo.style.display = "block";
+    })
+    img.addEventListener("mouseout", () => { 
+        fondo.style.display = "none";
+    })
+  </script>
 </body>
 </html>
